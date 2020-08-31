@@ -87,6 +87,7 @@ public class Driver {
 						front = front.next;
 						count--;
 						System.out.println(count);
+		//The time complexity for this method is linear.
 				}
 		}
 		}
