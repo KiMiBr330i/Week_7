@@ -29,6 +29,7 @@ public class Driver {
 		LinkedStack.popLS();
 		LinkedStack.popLS();
 		LinkedStack.popLS();
+		LinkedStack.removeBottomHalf();
 	}
 
 	
@@ -80,7 +81,13 @@ public class Driver {
 				System.out.print(x + "  "); //prints the deleted value to the console.
 				return x;
 			}
-		
-			
+		public static void removeBottomHalf() {
+				if (count%2 <= 0) {
+					for (int i=0; i < count/2; i++)
+						front = front.next;
+						count--;
+						System.out.println(count);
+				}
+		}
 		}
 	}
